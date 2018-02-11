@@ -1,0 +1,50 @@
+Tokenization can be achieved in both NLTC and spaCy.
+
+Natural Language ToolKit(NLTC): natural language toolkit as its name indicates
+is package for working with human language data in pyhton.
+
+           ####### How to activate this package on ur system ###### 
+
+You should first install pip and then with the help of that installing NLTK
+How to install NLTL with Python 2.x : sudo pip install nltk
+How to install NLTL with Python 3.x : sudo pip3 install nltk
+
+After doing that installation is not completed, you need to go to the python
+and do the followint:
+import nltk
+nltk.download()
+
+After doing that you will see a graphical representation. You need to dw all
+the required packages. 
+
+        ###### How to use these packages for tokenizing words ######
+
+Now all the required packages are successfully installed. For takenizing a
+string we need to use the appropriate classes from these packages.
+This aim can be obtained using the following command:
+  from nltk.tokenize import sent_tokenize, word_tokenize
+We are importing 2 classes which is needed from nltk.tokenize package.  
+sent_tokenize is for word tokenization
+word_tokenize is for word tokenization
+
+printing the tokenizes sentences
+print(sent_tokenize(data))
+pritn(word_tokenize(data))
+
+We are also enable to store the tokenised result into another variable
+phrases = sent_tokenize(data)
+words = word_tokenize(data)
+print(words, phrases)
+
+We can also use wordpunct_tokenize class to tokenize on the basis of 
+punctuation and workd
+for example:
+print(word_tokenize(2.67)) ----> 2.67
+print(wordpunct_tokenize(2.67)) ----> '2', '.', '67'
+
+                   ##### summary of all available classes #####
+sent_tokenize: tokenizing on the sentence basis
+word_tokenize: tokenizing on the word basis
+wordpunct_tokenize: tokenizing based on the word and punctuation basis
+ 
+
